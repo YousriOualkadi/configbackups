@@ -1,0 +1,25 @@
+Current configuration:
+!
+!Version ArubaOS-CX Virtual.10.10.1000
+!export-password: default
+hostname swt1
+user admin group administrators password ciphertext AQBapXxawot9D2fnQoIwk/bJxxgKeg1PDb8KAmKghDwg4rgpYgAAANIVzi8bjocItjUm/fnt4lR1qFuRG3e6AM5eclsECP4Nis17cjvfHWUMEe+MXZP4DyX3rplWcPCoOSciOUHlBf2gTFI8S5/J4qRCiOrhyrBdhscDPbURjrBecQB/4sMNxua0
+led locator on
+!
+!
+!
+!
+!
+!
+ssh server vrf default
+ssh server vrf mgmt
+vlan 1
+interface mgmt
+    no shutdown
+    ip static 192.168.88.20/24
+!
+!
+!
+!
+!
+https-server vrf mgmt
